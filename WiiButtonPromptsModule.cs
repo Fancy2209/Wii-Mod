@@ -27,11 +27,15 @@ namespace Celeste.Mod.WiiButtonPrompts {
 
         }
 
-        private string WiiButtons(On.Celeste.Input.orig_GuiInputPrefix orig, Input.PrefixMode mode);
+        private string WiiButtons(On.Celeste.Input.orig_GuiInputPrefix orig, Input.PrefixMode mode)
+{
+            string gUIDEXT = Microsoft.Xna.Framework.Input.GamePad.GetGUIDEXT(MInput.GamePads[Input.Gamepad].PlayerIndex);
+            string ret = orig(mode);
             if (gUIDEXT.Equals("7e050603"))
                 {
                     return "wii";
                 }
-                On.Celeste.Input.orig_GuiInputPrefix orig, On.Celeste.Input.PrefixMode mode; 
+            return ret;
+}
     }
 }
