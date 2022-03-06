@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.Xna.Framework; 
+
 namespace Celeste.Mod.WiiButtonPrompts {
     public class WiiButtonPromptsModule : EverestModule {
         
