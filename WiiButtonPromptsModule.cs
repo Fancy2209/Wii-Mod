@@ -35,7 +35,7 @@ namespace Celeste.Mod.WiiButtonPrompts {
                 {
                     return "wii";
                 }
-            return ret;
+            return ret = orig(mode);
 }
     }
 }
