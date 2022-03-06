@@ -10,6 +10,7 @@ namespace Celeste.Mod.WiiButtonPrompts {
         }
 
         public override void Load() {
+            
         }
 
         public override void Unload() {
