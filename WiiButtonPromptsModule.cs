@@ -21,12 +21,15 @@ namespace Celeste.Mod.WiiButtonPrompts {
             On.Celeste.Input.GuiInputPrefix -=  WiiButtons;
         }
         
+        /* Code to Get GUID of a Controller
         public override void Initialize() {
            string gUIDEXT = Microsoft.Xna.Framework.Input.GamePad.GetGUIDEXT(MInput.GamePads[Input.Gamepad].PlayerIndex);
            Console.WriteLine(gUIDEXT);
 
         }
+        */
 
+        //Code who Actually Makes it work
         private string WiiButtons(On.Celeste.Input.orig_GuiInputPrefix orig, Input.PrefixMode mode)
 {
             string gUIDEXT = Microsoft.Xna.Framework.Input.GamePad.GetGUIDEXT(MInput.GamePads[Input.Gamepad].PlayerIndex);
